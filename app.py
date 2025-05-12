@@ -8,8 +8,8 @@ import gdown
 # Mapping of model names to Google Drive file IDs
 model_ids = {
     "DenseNet169 (Keras)": "1dIhc-0vd9sDoU5O6H0ZE6RYrP-CAyWks",
-    "InceptionV3 (Keras)": "1ARBL_SK66Ppj7_kJ1Pe2FhH2olbTQHWY",
-    "MobileNet (Keras)": "14YuV3qZb_6FI7pXoiJx69HxiDD4uNc_Q",
+    "InceptionV3 (Keras)": "10B53bzc1pYrQnBfDqBWrDpNmzWoOl9ac",
+    "MobileNet (Keras)": "1mlfoy6kKXUwIciZW3nftmiMHOTzpy6_s",
     "EfficientNetB3 (Keras)": "1cQA3_oH2XjDFK-ZE9D9YsP6Ya8fQiPOy"
 }
 
@@ -224,7 +224,7 @@ st.markdown("""
 
 # Sidebar
 with st.sidebar:
-    st.image("https://www.nitm.ac.in/p/logo", width=100)
+    st.image("https://www.nitm.ac.in/cygnus/nitmeghalaya/ckfinder/userfiles/images/NITM.gif", width=100)
     st.title("BoneScan AI")
     
     # Theme toggle button
@@ -255,9 +255,9 @@ with st.sidebar:
     """)
     
     st.markdown("---")
-    st.markdown("👨‍⚕️ **Medical Disclaimer**")
+    st.markdown("👨‍⚕ *Medical Disclaimer*")
     st.markdown("""
-    *This tool is for research purposes only. Always consult a qualified healthcare professional for medical diagnosis.*
+    This tool is for research purposes only. Always consult a qualified healthcare professional for medical diagnosis.
     """)
 
 # Main Content
@@ -372,7 +372,7 @@ with main_col1:
                 if result == "Fracture Detected":
                     st.markdown("""
                         <div class="card" style="border-left: 4px solid var(--danger);">
-                            <h3>⚠️ Medical Recommendation</h3>
+                            <h3>⚠ Medical Recommendation</h3>
                             <p>Our analysis indicates a potential fracture. Please:</p>
                             <ul>
                                 <li>Consult an orthopedic specialist immediately</li>
@@ -410,7 +410,7 @@ with main_col2:
     
     st.markdown("""
         <div class="card">
-            <h2>ℹ️ How It Works</h2>
+            <h2>ℹ How It Works</h2>
             <ol>
                 <li>Upload X-ray image</li>
                 <li>AI processes image features</li>
@@ -440,6 +440,6 @@ st.markdown("---")
 st.markdown("""
     <div style="text-align: center; color: var(--text); opacity: 0.7; font-size: 0.9rem; padding: 1rem;">
         <p>BoneScan AI v1.0 | For research purposes only | Not for clinical use</p>
-        <p>© 2023 Medical AI Research Group | All rights reserved</p>
+        <p>© 2025 Medical AI Research Group | All rights reserved</p>
     </div>
 """, unsafe_allow_html=True)
